@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginController">
+            <connections>
+                <outlet property="loginBtn" destination="1bB-bR-By4" id="7Me-Ps-gQC"/>
+                <outlet property="pwdTextField" destination="etK-oP-p5w" id="wdt-LS-9ku"/>
+                <outlet property="userIDTextField" destination="yuj-j5-erb" id="5Ue-8i-28y"/>
+                <outlet property="userNamePwdView" destination="QW4-El-bzT" id="err-l6-FwG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewAndLoginBtn" destination="chj-xx-IUc" id="QwK-0d-04y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bB-bR-By4">
+                    <rect key="frame" x="33" y="474" width="310" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="7v4-kD-tdA"/>
+                        <constraint firstAttribute="width" constant="310" id="9um-Ys-oBY"/>
+                    </constraints>
+                    <state key="normal" image="loginBtnImage"/>
+                    <connections>
+                        <action selector="LoginBtn:" destination="-1" eventType="touchUpInside" id="x1A-8Z-HVp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zS-j7-mtE" userLabel="regist Btn">
+                    <rect key="frame" x="38" y="17" width="96" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="XpA-Id-oBj"/>
+                        <constraint firstAttribute="width" constant="96" id="ddW-r1-7fY"/>
+                    </constraints>
+                    <state key="normal" image="regBtnImage"/>
+                    <connections>
+                        <action selector="registBtn:" destination="-1" eventType="touchUpInside" id="eAk-pD-dhB"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QW4-El-bzT">
+                    <rect key="frame" x="31" y="320" width="315" height="125"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="etK-oP-p5w">
+                            <rect key="frame" x="29" y="78" width="257" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuj-j5-erb">
+                            <rect key="frame" x="29" y="17" width="257" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="yuj-j5-erb" secondAttribute="trailing" constant="29" id="7Mi-pJ-qas"/>
+                        <constraint firstItem="etK-oP-p5w" firstAttribute="width" secondItem="yuj-j5-erb" secondAttribute="width" id="89n-ce-5gU"/>
+                        <constraint firstAttribute="bottom" secondItem="etK-oP-p5w" secondAttribute="bottom" constant="14" id="99Q-6x-YGF"/>
+                        <constraint firstItem="yuj-j5-erb" firstAttribute="leading" secondItem="QW4-El-bzT" secondAttribute="leading" constant="29" id="CtZ-kW-Kof"/>
+                        <constraint firstItem="etK-oP-p5w" firstAttribute="leading" secondItem="QW4-El-bzT" secondAttribute="leading" constant="29" id="XAB-oD-prG"/>
+                        <constraint firstAttribute="trailing" secondItem="etK-oP-p5w" secondAttribute="trailing" constant="29" id="Yk0-Et-lbR"/>
+                        <constraint firstItem="etK-oP-p5w" firstAttribute="height" secondItem="yuj-j5-erb" secondAttribute="height" id="b25-Dg-Db8"/>
+                        <constraint firstAttribute="width" constant="315" id="buC-6L-B2b"/>
+                        <constraint firstAttribute="height" constant="125" id="ed1-Ln-DtE"/>
+                        <constraint firstItem="etK-oP-p5w" firstAttribute="top" secondItem="yuj-j5-erb" secondAttribute="bottom" constant="28" id="gIf-CG-XC6"/>
+                        <constraint firstItem="etK-oP-p5w" firstAttribute="centerX" secondItem="QW4-El-bzT" secondAttribute="centerX" id="uvm-pj-sRu"/>
+                        <constraint firstItem="yuj-j5-erb" firstAttribute="top" secondItem="QW4-El-bzT" secondAttribute="top" constant="17" id="vNR-A0-sYx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1bB-bR-By4" firstAttribute="top" secondItem="QW4-El-bzT" secondAttribute="bottom" constant="29" id="2QL-60-RTd"/>
+                <constraint firstItem="QW4-El-bzT" firstAttribute="centerX" secondItem="1bB-bR-By4" secondAttribute="centerX" id="2YL-2u-r4C"/>
+                <constraint firstItem="1zS-j7-mtE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="B2V-l3-YpL"/>
+                <constraint firstItem="1zS-j7-mtE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="17" id="Ysx-2Z-JWq"/>
+                <constraint firstAttribute="bottom" secondItem="1bB-bR-By4" secondAttribute="bottom" constant="140" id="chj-xx-IUc"/>
+                <constraint firstAttribute="trailing" secondItem="1bB-bR-By4" secondAttribute="trailing" constant="32" id="ko7-Gm-GJZ"/>
+                <constraint firstItem="1bB-bR-By4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uew-lJ-Zxl"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="371.5" y="296.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginBtnImage" width="313" height="63"/>
+        <image name="regBtnImage" width="48" height="31"/>
+    </resources>
+</document>

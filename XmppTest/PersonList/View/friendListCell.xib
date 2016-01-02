@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="friendListCell">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ob-Gd-3RZ">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="DrK-4N-VUP"/>
+                            <constraint firstAttribute="width" constant="60" id="pPO-dX-zgJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uV9-Mg-GLY">
+                        <rect key="frame" x="93" y="8" width="184" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="g2H-tZ-8x7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="5ob-Gd-3RZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="3pn-GS-9uJ"/>
+                    <constraint firstItem="5ob-Gd-3RZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="TTa-WB-PLS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uV9-Mg-GLY" secondAttribute="trailing" constant="90" id="XhI-dy-ofm"/>
+                    <constraint firstItem="uV9-Mg-GLY" firstAttribute="leading" secondItem="5ob-Gd-3RZ" secondAttribute="trailing" constant="21" id="oJS-hy-D0g"/>
+                    <constraint firstItem="uV9-Mg-GLY" firstAttribute="top" secondItem="5ob-Gd-3RZ" secondAttribute="top" id="sGl-6o-3jo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="userImageView" destination="5ob-Gd-3RZ" id="hN1-jh-XZQ"/>
+                <outlet property="userNameLabel" destination="uV9-Mg-GLY" id="TAc-6x-Rk3"/>
+            </connections>
+            <point key="canvasLocation" x="343.5" y="193"/>
+        </tableViewCell>
+    </objects>
+</document>
