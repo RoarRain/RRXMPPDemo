@@ -1,1 +1,1 @@
-大概写了些iOS XMPP  Demo
+大概写了写OS XMPP  Demo
