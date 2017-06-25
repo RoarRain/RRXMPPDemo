@@ -1,1 +1,1 @@
-大概写了写OS XMPP  Demo
+基于XMPP即时通讯Demo
